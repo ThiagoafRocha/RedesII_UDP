@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/index.css">
+        <title>GivePDF</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <span class="text">Give<span class="pdf">PDF</span></span>
+                <img class="download" src="/assets/download_ic.png" onclick="get()"/>
+
+            </div>
+            <div class="image">
+                <img class='arrLeft' src="/assets/arrow.png" alt="" onclick="pdfL()">
+                <div id="mudaimg">
+                    <img class='imagePDF' src="/assets/3p.jpg" alt="">
+                </div>
+                <img class='arrRight' src="/assets/arrow.png" alt="" onclick="pdfR()">
+            </div>
+            <span class="resumo">Resumo</span>
+            <div class="resumoText" id="resumo">
+                Os porquinhos saem da casa da mãe e cada um constrói sua casa e o lobo mau derruba a casa para tentar comê-los.
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <div id="modalCorpo" class="modal-content">
+                <div class="adjust">
+                    <span class="close">&times;</span>
+                    <label for="pass">Digite a senha:
+                    </label>
+                    <input id="pass" type="text">
+                    <button class="btnRed" onclick='getPass()'>Confirmar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/func.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+</html>
