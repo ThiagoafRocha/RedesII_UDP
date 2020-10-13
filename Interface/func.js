@@ -36,7 +36,7 @@ function pdfR() {
     var img = document.getElementById("mudaimg");
     var resumo = document.getElementById("resumo");
     img.innerHTML = ""
-    img.innerHTML = `<img class="imagePDF" src="/assets/${vImage[itera]}" alt="">`
+    img.innerHTML = `<img class="imagePDF" src="/Interface/assets/${vImage[itera]}" alt="">`
     resumo.innerHTML = ""
     resumo.innerHTML = vText[itera]
 }
@@ -50,7 +50,7 @@ function pdfL() {
     var img = document.getElementById("mudaimg");
     var resumo = document.getElementById("resumo");
     img.innerHTML = ""
-    img.innerHTML = `<img class="imagePDF" src="/assets/${vImage[itera]}" alt="">`
+    img.innerHTML = `<img class="imagePDF" src="/Interface/assets/${vImage[itera]}" alt="">`
     resumo.innerHTML = ""
     resumo.innerHTML = vText[itera]
 }
